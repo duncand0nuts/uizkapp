@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
 
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
   webpack(config) {
     config.resolve.alias = {
       ...config.resolve.alias,
@@ -31,6 +30,7 @@ const nextConfig = {
       },
     ];
   },
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
   images: {
     unoptimized: true,
   },
